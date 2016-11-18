@@ -7,6 +7,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     // DANA HERE
+
+    // -- TUAN HERE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
