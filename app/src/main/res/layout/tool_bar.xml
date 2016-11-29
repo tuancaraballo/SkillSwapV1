@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuananhcaraballo.skillswapv1.ToolBarActivity">
+
+
+    <TableRow
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center|bottom"
+        android:layout_weight="1"
+        android:paddingBottom="0dp"
+        android:padding="0dp"
+        android:background="@color/background2"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/groups_48"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="toNetwork"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notif_48"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/finduser_48"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/sms_48"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/profile_48"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/profileIcon"
+            android:onClick="toProfile"
+            />
+
+    </TableRow>
+
+
+
+</LinearLayout>

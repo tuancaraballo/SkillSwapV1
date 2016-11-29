@@ -8,7 +8,35 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--<activity android:name=".MainActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profile" />
+        <activity android:name=".ToolBarActivity" />
+        <activity android:name=".messages" />
+        <activity android:name=".notifications" />
+        <activity android:name=".search" />
+        <activity android:name=".results" />
+        <activity android:name=".user1" />
+        <activity android:name=".communication" />
+        <activity android:name=".startMessaging" />
+        <activity android:name=".videoMessageCommunication" />
+        <activity android:name=".calendarAvailability" />
+        <!--<activity android:name=".splash"></activity>-->
+
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
