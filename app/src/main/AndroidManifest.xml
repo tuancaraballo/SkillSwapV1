@@ -45,4 +45,8 @@
         </activity>
     </application>
 
+    <!--<theme>-->
+        <!--<application android:theme="@android:style/Theme.NoTitleBar"/>-->
+    <!--</theme>-->
+
 </manifest>

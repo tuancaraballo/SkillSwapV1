@@ -126,7 +126,6 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="Accpet Request"
             android:onClick="toCommunication"
             android:layout_marginRight="10dp"/>
