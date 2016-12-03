@@ -2,19 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tuananhcaraballo.skillswapv1">
 
+    <!-- <theme> -->
+    <!-- <application android:theme="@android:style/Theme.NoTitleBar"/> -->
+    <!-- </theme> -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".MainActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -34,7 +40,7 @@
         <activity android:name=".startMessaging" />
         <activity android:name=".videoMessageCommunication" />
         <activity android:name=".calendarAvailability" />
-        <!--<activity android:name=".splash"></activity>-->
+        <!-- <activity android:name=".splash"></activity> -->
 
         <activity android:name=".splash">
             <intent-filter>
@@ -43,10 +49,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".requestSwapwithDropDownMenu"></activity>
     </application>
-
-    <!--<theme>-->
-        <!--<application android:theme="@android:style/Theme.NoTitleBar"/>-->
-    <!--</theme>-->
 
 </manifest>

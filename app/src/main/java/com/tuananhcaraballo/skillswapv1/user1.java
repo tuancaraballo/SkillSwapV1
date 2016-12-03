@@ -43,4 +43,9 @@ public class user1 extends AppCompatActivity {
         Intent intent = new Intent(this, communication.class);
         startActivity(intent);
     }
+
+    public void toSwapDropDown(View view) {
+        Intent intent = new Intent(this, requestSwapwithDropDownMenu.class);
+        startActivity(intent);
+    }
 }
