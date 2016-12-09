@@ -1,386 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-
+    android:id="@+id/tabHost"
     tools:context="com.tuananhcaraballo.skillswapv1.MainActivity">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Current Network"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30dp"
-        android:id="@+id/title"/>
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="5dp"
-        android:gravity="center_horizontal"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_horizontal"
-            android:textSize="18dp"
-            android:text="Partner"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="18dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:text="Teaching"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_horizontal"
-            android:textSize="18dp"
-            android:gravity="center"
-            android:text="Learning"/>
-
-    </LinearLayout>
-
-
-    <!--First connection-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondConnection"
-            android:background="@color/background2"
-            android:elevation="1dp"
-            android:clickable="true"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:onClick="toUserOne"
-            android:layout_marginBottom="5dp">
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
 
-                <!--Partner (icon+name)-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
+            <!--<include-->
+                <!--android:id="@+id/layout1"-->
+                <!--layout="@layout/activity_network"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></include>-->
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/jacob_trans"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Jacob"
-                        />
+            <!--<include-->
+                <!--android:id="@+id/layout2"-->
+                <!--layout="@layout/activity_notifications"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></include>-->
 
-                </LinearLayout>
+            <!--<include-->
+                <!--android:id="@+id/layout3"-->
+                <!--layout="@layout/activity_search"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></include>-->
+
+            <!--<include-->
+                <!--android:id="@+id/layout4"-->
+                <!--layout="@layout/activity_messages"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></include>-->
+            <!--<include-->
+                <!--android:id="@+id/layout5"-->
+                <!--layout="@layout/activity_profile"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"></include>-->
 
 
 
-                <!--Teaching-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1">
+        </FrameLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Biking"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Intermediate"
-                        />
-
-                </LinearLayout>
-
-                <!--Learning-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Algebra"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Beginner"
-                        />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_weight="0"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TabWidget>
     </LinearLayout>
 
+</TabHost>
 
-    <!--Second connection-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondConnection"
-            android:background="@color/background2"
-            android:elevation="1dp"
-            android:clickable="true"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:onClick="toUserOne"
-            android:layout_marginBottom="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
-
-                <!--Partner (icon+name)-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/dana_trans"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Dana"
-                        />
-
-                </LinearLayout>
-
-
-
-                <!--Teaching-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Fencing"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Beginner"
-                        />
-
-                </LinearLayout>
-
-                <!--Learning-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Juggling"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Advanced"
-                        />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-
-
-    <!--Third connection-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondConnection"
-            android:background="@color/background2"
-            android:elevation="1dp"
-            android:clickable="true"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:onClick="toUserOne"
-            android:layout_marginBottom="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground">
-
-                <!--Partner (icon+name)-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/tuan_trans"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Tuan"
-                        />
-
-                </LinearLayout>
-
-
-
-                <!--Teaching-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Business"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Advanced"
-                        />
-
-                </LinearLayout>
-
-                <!--Learning-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"
-                        android:text="Poker"
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="13dp"
-                        android:text="Intermediate"
-                        />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <include layout="@layout/toolbar"/>
-
-
-</LinearLayout>

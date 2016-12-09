@@ -1,8 +1,8 @@
 package com.tuananhcaraballo.skillswapv1;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class results extends AppCompatActivity {
@@ -11,16 +11,21 @@ public class results extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+
     }
 
-    //-----> Classes used to navigate between activities, not the most clean way, but it works
-    public void toNetwork(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+    public void toUserOne(View view) {
+        Intent intent = new Intent(this, user1.class);
         startActivity(intent);
     }
 
-    public void toProfile(View view) {
-        Intent intent = new Intent(this, profile.class);
+    public void toSwapRequest(View view) {
+        Intent intent = new Intent(this, requestSwapwithDropDownMenu.class);
+        startActivity(intent);
+    }
+
+    public void toNetwork(View view){
+        Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -39,13 +44,8 @@ public class results extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toUserOne(View view) {
-        Intent intent = new Intent(this, user1.class);
-        startActivity(intent);
-    }
-
-    public void toSwapRequest(View view) {
-        Intent intent = new Intent(this, requestSwapwithDropDownMenu.class);
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
 }

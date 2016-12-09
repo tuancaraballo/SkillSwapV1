@@ -4,233 +4,203 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tuananhcaraballo.skillswapv1.search">
 
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Search for Swap Buddies"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25dp"
-        android:id="@+id/title"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="15dp"
-        android:textStyle="italic"
-        android:text="Filter by Skills from your Profile"/>
-
-    <!--Wrapper for columns-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp">
-
-        <!--Can Teach Tile-->
-        <LinearLayout
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor">
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginRight="40dp"
-
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textStyle="bold"
-                android:text="Can Teach"
-                android:textSize="23dp"
-                />
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Cat Facts"
-                    android:layout_gravity="center_vertical"
-                    />
-            </LinearLayout>
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Dancing"
-                    android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Fencing"
-                    android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
-        <!--Want to learn Tile-->
-
-        <!--Can Teach Tile-->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textStyle="bold"
-                android:text="Can Learn"
-                android:textSize="23dp"
-                />
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Juggling"
-                    android:layout_gravity="center_vertical"
-                    />
-            </LinearLayout>
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Biking"
-                    android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-            <!-- Check box + skill-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-
-                >
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="false"
-                    android:layout_gravity="center_vertical"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:text="Fencing"
-                    android:layout_gravity="center_vertical"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Search for Partners"
+            android:textColor="@color/white1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
     </LinearLayout>
 
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:onClick="ToResults"
-        android:textSize="40dp"
-        android:text="Continue"/>
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:text="Filter by Skills from your Profile"/>
+
+        <!--Wrapper for columns-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <!--Can Teach Tile-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Can Teach"
+                    android:textSize="23dp"
+                    />
+
+                <!-- Check box + skill-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/leftTop"
+                        android:onClick="changeLeftTop"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/background2"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:text="Dancing"/>
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/leftMid"
+                        android:onClick="changeLeftMid"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/background2"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:text="Writing"/>
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/leftBottom"
+                        android:onClick="changeLeftBottom"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/background2"
+                        android:textAllCaps="false"
+                        android:text="Guitar"/>
+                </LinearLayout>
+
+            </LinearLayout>
 
 
-    <include layout="@layout/toolbar"/>
+
+            <!--Want to learn Tile-->
+
+            <!--Can Teach Tile-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Can Learn"
+                    android:textSize="23dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/background2"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:onClick="changeRightTop"
+                        android:text="Coding"
+                        android:id="@+id/rightTop" />
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rightMid"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="changeRightMid"
+                        android:background="@color/background2"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:text="Origami"/>
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rightBottom"
+                        android:onClick="changeRightBottom"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/background2"
+                        android:text="Singing"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="   Continue   "
+            android:background="@color/themeColor"
+            android:textColor="@color/white1"
+            android:onClick="toResultList"/>
 
 
 
+        <!--<include layout="@layout/toolbar"-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:visibility="gone"/>-->
+
+    </LinearLayout>
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        android:visibility="gone"/>
 </LinearLayout>

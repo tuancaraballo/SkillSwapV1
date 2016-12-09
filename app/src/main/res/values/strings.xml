@@ -2,17 +2,14 @@
     <string name="app_name">SkillSwapV1</string>
 
 
-<string-array name="spinSwap">
-    <item>Fencing</item>
-    <item>Juggling</item>
-</string-array>
+    <string-array name="spinSwap">
+        <item>Coding</item>
+        <item>Origami</item>
+
+    </string-array>
 
     <string-array name="spinRequest">
-        <item>Biking</item>
-        <item>Fishing</item>
-        <item>Swimming</item>
-        <item>Juggling</item>
-        <item>Dancing</item>
+        <item>Guitar</item>
     </string-array>
 
 

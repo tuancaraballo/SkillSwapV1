@@ -8,9 +8,11 @@
     <color name="background3">#E1E1E1</color>
     <color name="lightGrey">#C0C0C0</color>
     <color name="duskYellow">#FFC900</color>
-
-
-
-
+    <color name="white1">#FFFFFF</color>
+    <color name="Grey1">#777777</color>
+    <color name="green1">#0e864a</color>
+    <color name="green2">#12ad60</color>
+    <color name="themeColor">#4579C7</color>
+    <color name="background4">#d2d0d0</color>
 
 </resources>

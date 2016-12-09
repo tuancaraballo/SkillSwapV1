@@ -1,11 +1,11 @@
 package com.tuananhcaraballo.skillswapv1;
 
+import android.app.ActivityGroup;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class messages extends AppCompatActivity {
+public class messages extends ActivityGroup {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,14 +13,19 @@ public class messages extends AppCompatActivity {
         setContentView(R.layout.activity_messages);
     }
 
-    //-----> Classes used to navigate between activities, not the most clean way, but it works
-    public void toNetwork(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-    public void toProfile(View view) {
-        Intent intent = new Intent(this, profile.class);
+        View toolbar = findViewById(R.id.toolbar);
+        if (GLOBALS.getGlobalInstance().isNotInMain()) {
+            toolbar.setVisibility(View.VISIBLE);
+        } else {
+            toolbar.setVisibility(View.GONE);
+        }
+    }
+    public void toNetwork(View view){
+        Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -38,4 +43,10 @@ public class messages extends AppCompatActivity {
         Intent intent = new Intent(this, messages.class);
         startActivity(intent);
     }
+
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
+    }
+
 }

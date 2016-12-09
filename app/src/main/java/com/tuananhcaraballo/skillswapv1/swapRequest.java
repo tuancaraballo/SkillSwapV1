@@ -4,22 +4,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
-public class user1 extends AppCompatActivity{
+public class swapRequest extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user1);
+        setContentView(R.layout.activity_swap_request);
     }
 
-
-
-
-    public void toSwapDropDown(View view) {
-        Intent intent = new Intent(this, requestSwapwithDropDownMenu.class);
+    public void toJustin(View view) {
+        Intent intent = new Intent(this, Justin.class);
         startActivity(intent);
     }
+
+    public void toNetworkAccept(View view) {
+        GLOBALS.getGlobalInstance().setAcceptRequest(true);
+        Intent intent = new Intent (this, MainActivity.class);
+        Toast.makeText(this, "Request Accepted!",
+                Toast.LENGTH_LONG).show();
+        startActivity(intent);
+    }
+
+
     public void toNetwork(View view){
         Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
@@ -44,6 +52,4 @@ public class user1 extends AppCompatActivity{
         Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
-
-
 }

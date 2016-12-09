@@ -4,121 +4,159 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tuananhcaraballo.skillswapv1.requestSwapwithDropDownMenu">
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:text="Request to Swap Skills"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:textSize="25dp"-->
+    <!--android:id="@+id/title"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Request to Swap Skills"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25dp"
-        android:id="@+id/title"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" with Betty"
-        android:layout_gravity="center_horizontal"
-        android:textSize="25dp"
-        android:id="@+id/title"/>
-    
-    
-    
+        android:background="@color/themeColor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Send Request"
+            android:textColor="@color/white1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-        
-        
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginRight="5dp"
-            android:gravity="center_vertical"
-            android:text="Your"/>
+            android:text=" Swap skills with Emily"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:textSize="23dp"
+            android:id="@+id/title"/>
+
+
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/background2"
-            android:layout_marginRight="5dp"
-            android:elevation="1dp">
-            <Spinner
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinSwap"
-                android:entries="@array/spinSwap"
-                android:layout_marginRight="10dp"></Spinner>
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Your"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background2"
+                android:layout_marginRight="5dp"
+                android:elevation="1dp">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinSwap"
+                    android:entries="@array/spinSwap"
+                    android:layout_marginRight="10dp"></Spinner>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:text="for their"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background2"
+                android:elevation="1dp">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinRequest"
+                    android:entries="@array/spinRequest"></Spinner>
+
+            </LinearLayout>
+
         </LinearLayout>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
-            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
             android:textSize="20dp"
-            android:text="for their"/>
+            android:text="Send an introduction to Emily:"/>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:minHeight="120dp"
+            android:gravity="left"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
             android:background="@color/background2"
-            android:elevation="1dp">
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinRequest"
-                android:entries="@array/spinRequest"></Spinner>
+            android:textStyle="italic"
+            android:hint="Say something to Emily"
+            />
 
-            </LinearLayout>
-        
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="Send Request"-->
+        <!--android:textSize="30dp"-->
+        <!--android:onClick="toBackNetwork"/>-->
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="   Send Request   "
+            android:background="@color/themeColor"
+            android:textColor="@color/white1"
+            android:onClick="toBackNetwork"/>
     </LinearLayout>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginTop="30dp"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="2dp"
-        android:textSize="20dp"
-        android:text="Send an introduction to Betty:"/>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="1dp"
-        android:minHeight="120dp"
-        android:gravity="left"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
-        android:background="@color/background2"
-        android:textStyle="italic"
-        android:hint="Say something to Betty"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Send Request"
-        android:textSize="30dp"
-        android:onClick="toBackNetwork"/>
-
     <include layout="@layout/toolbar"/>
-
-
 </LinearLayout>

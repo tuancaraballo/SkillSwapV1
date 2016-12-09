@@ -4,10 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tuananhcaraballo.skillswapv1.user1">
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/themeColor">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="Emily's Profile"-->
+            <!--android:textColor="@color/white1"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textSize="30dp"-->
+            <!--android:id="@+id/title"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Emily's Profile"
+            android:textColor="@color/white1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
 
 
     <LinearLayout
@@ -31,10 +72,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/stock1_large_trans_2"
+                android:src="@drawable/female3"
                 android:adjustViewBounds="true"
-                android:maxWidth="230dp"
-                android:maxHeight="230dp"
+                android:maxWidth="200dp"
+                android:maxHeight="200dp"
                 android:scaleType="fitXY"
                 android:layout_gravity="center"/>
             <TextView
@@ -42,35 +83,54 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="17dp"
-                android:text="Betty"
+                android:text="Emily"
                 />
-            <RatingBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-
-
-                android:theme="@style/RatingBar"
-                style="@style/Base.Widget.AppCompat.RatingBar.Small"
-                android:rating="3.5"
-                android:isIndicator="true"/>
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/background2"
-            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:textSize="15dp"
-            android:elevation="5dp"
-            android:text="Hello I'm Betty, I'm passionate about learning. Please skill-swap with me :-)"
+            android:padding="5dp"
+            android:text="Hiya! My name's Emily, and I'm looking to meet new people and learn cool new things. I prefer to meet in-person on weekends."
             />
 
     </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stars_bar_small_blue"
+                android:adjustViewBounds="true"
+                android:maxWidth="90dp"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:text=" (12)"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
 
 
+    </LinearLayout>
 
     <!--Layout wrapper for tiles-->
     <LinearLayout
@@ -80,7 +140,6 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp">
-
 
 
         <!--One Column of tiles-->
@@ -110,11 +169,12 @@
                 android:text="Beginner"/>
 
             <TextView
+                android:id="@+id/you_teach_a"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tBiking\n\t\tFishing"/>
+                android:text="\t\tGuitar\n\t\t"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -129,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tSwimming\n\t\tJuggling"/>
+                android:text="\t\tSinging\n"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -144,7 +204,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tDancing"/>
+                android:text="\t\t"/>
 
         </LinearLayout>
 
@@ -178,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tPoker\n\t\tParkour"/>
+                android:text="\t\tCoding\n\t\t"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -193,7 +253,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tFishing\n\t\tBiking"/>
+                android:text="\t\tWriting\n\t\tOrigami"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -208,25 +268,24 @@
                 android:layout_height="wrap_content"
                 android:textSize="12dp"
                 android:layout_marginTop="4dp"
-                android:text="\t\tFencing\n"/>
+                android:text="\t\tDancing\n"/>
 
         </LinearLayout>
     </LinearLayout>
 
-
-
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
-        android:textSize="15dp"
-        android:layout_marginTop="7dp"
-        android:onClick="toSwapDropDown"
-        android:text="Send SkillSwap Request"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="   Send Skillswap request   "
+        android:background="@color/themeColor"
+        android:textColor="@color/white1"
+        android:onClick="toSwapDropDown"/>
 
 
+</LinearLayout>
 
     <include layout="@layout/toolbar"/>
-
 </LinearLayout>

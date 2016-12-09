@@ -4,142 +4,185 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tuananhcaraballo.skillswapv1.notifications">
 
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Emily wants toswap skills with you!"
-        android:textSize="20dp"
-        android:layout_marginTop="5dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/female_512"
-        android:adjustViewBounds="true"
-        android:layout_marginTop="15dp"
-        android:maxWidth="100dp"
-        android:maxHeight="100dp"
-        android:scaleType="fitXY"
-        android:layout_gravity="center_horizontal"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Emily's profile"
-        android:onClick="toUserOne"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"/>
-
-
-    <!-- Swap Button Layout-->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         android:layout_height="wrap_content"
-        android:background="@color/background2"
-        android:layout_marginTop="10dp"
-        android:elevation="5dp"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:padding="5dp">
-
-
-        <!-- Dancing-->
-        <LinearLayout
-            android:layout_width="wrap_content"
+        android:background="@color/themeColor">
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="Dancing"
-                android:layout_marginRight="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Intermediate"/>
-        </LinearLayout>
-
-        <!--Swap icon-->
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/swap_96"
-            android:adjustViewBounds="true"
-            android:maxWidth="40dp"
-            android:maxHeight="40dp"
-            android:scaleType="fitXY"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp"
-            />
-
-        <!-- Dancing-->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="Biking"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Intermediate"/>
-        </LinearLayout>
-
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Notifications"
+            android:textColor="@color/white1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:elevation="5dp"
-        android:background="@color/background2"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Hi Alice! I saw that you can teach dancing. I wanted to learn a few new dances for my sister's wedding. I can teach you some bike tricks in return. Let me Know if you are interested! "/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical|center_horizontal">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Accpet Request"
-            android:onClick="toCommunication"
-            android:layout_marginRight="10dp"/>
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:background="@color/background2"
-            android:text="Deny Request"
-            />
+            android:clickable="true"
+            android:onClick="toJustinRequest">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!--Partner (icon+name)-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/male3"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Justin sent you a \nSkillSwap request"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:textSize="14dp"
+                    android:text="         7:45 PM"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstConnection"
+            android:background="@color/background2"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!--Partner (icon+name)-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/male4"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Dave accepted your\nSkillSwap request"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:textSize="14dp"
+                    android:text=" Thurs"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background2"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!--Partner (icon+name)-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/female1"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Ashley accepted your\nSkillSwap request"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:textSize="14dp"
+                    android:text="11/24/16"
+                    android:layout_marginRight="10dp"/>
 
 
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
-
-
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        android:visibility="gone"/>
 </LinearLayout>

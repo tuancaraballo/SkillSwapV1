@@ -14,14 +14,16 @@ public class requestSwapwithDropDownMenu extends AppCompatActivity {
         setContentView(R.layout.activity_request_swapwith_drop_down_menu);
     }
 
-    //-----> Classes used to navigate between activities, not the most clean way, but it works
-    public void toNetwork(View view) {
+
+    public void toBackNetwork(View view) {
+        Toast.makeText(requestSwapwithDropDownMenu.this, "Request Sent!",
+                Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
-    public void toProfile(View view) {
-        Intent intent = new Intent(this, profile.class);
+    public void toNetwork(View view){
+        Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -40,10 +42,8 @@ public class requestSwapwithDropDownMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toBackNetwork(View view) {
-        Toast.makeText(requestSwapwithDropDownMenu.this, "Request Sent!",
-                Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, MainActivity.class);
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
 }

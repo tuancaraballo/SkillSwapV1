@@ -18,7 +18,7 @@ public class splash extends AppCompatActivity {
 
         final ImageView imageView = (ImageView) findViewById(R.id.imageView);
         final TextView textView = (TextView) findViewById(R.id.loadingText);
-        final Animation animation1 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
+        final Animation animation1 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.abc_fade_in);
         final Animation animation2 =  AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_out);
 
 

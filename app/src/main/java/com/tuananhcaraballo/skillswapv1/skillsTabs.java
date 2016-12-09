@@ -4,22 +4,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.widget.Toast;
 
-public class user1 extends AppCompatActivity{
+public class skillsTabs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user1);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_skills_tabs);
     }
 
 
-
-
-    public void toSwapDropDown(View view) {
-        Intent intent = new Intent(this, requestSwapwithDropDownMenu.class);
+    public void toFencing(View view) {
+        Intent intent = new Intent(this, fencing.class);
         startActivity(intent);
     }
+
     public void toNetwork(View view){
         Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
@@ -45,5 +47,8 @@ public class user1 extends AppCompatActivity{
         startActivity(intent);
     }
 
-
+    public void toSwapOne(View view) {
+        Toast.makeText(this, "Sorry, not available in Demo version",
+                Toast.LENGTH_SHORT).show();
+    }
 }

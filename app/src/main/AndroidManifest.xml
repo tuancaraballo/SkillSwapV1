@@ -5,14 +5,16 @@
     <!-- <theme> -->
     <!-- <application android:theme="@android:style/Theme.NoTitleBar"/> -->
     <!-- </theme> -->
-
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
         <!-- <activity android:name=".MainActivity"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -22,24 +24,20 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".profile" />
+        <activity android:name=".profile"/>
         <activity android:name=".ToolBarActivity" />
-        <activity android:name=".messages" />
+        <activity android:name=".messages"/>
         <activity android:name=".notifications" />
         <activity android:name=".search" />
-        <activity android:name=".results" />
-        <activity android:name=".user1" />
-        <activity android:name=".communication" />
-        <activity android:name=".startMessaging" />
-        <activity android:name=".videoMessageCommunication" />
-        <activity android:name=".calendarAvailability" />
+        <activity android:name=".results"/>
+        <activity android:name=".user1"   />
         <!-- <activity android:name=".splash"></activity> -->
 
         <activity android:name=".splash">
@@ -49,7 +47,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".requestSwapwithDropDownMenu"></activity>
+        <activity android:name=".requestSwapwithDropDownMenu" />
+        <activity android:name=".network" />
+        <activity android:name=".swapSummary" />
+        <activity android:name=".rateExperience" />
+        <activity android:name=".addLearnedSkill" />
+        <activity android:name=".skillsTabs" />
+        <activity android:name=".swapRequest" />
+        <activity android:name=".fencing" />
+        <activity android:name=".Justin" ></activity>
     </application>
 
 </manifest>

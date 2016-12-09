@@ -5,23 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class communication extends AppCompatActivity {
+public class rateExperience extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_communication);
+        setContentView(R.layout.activity_rate_experience);
     }
 
 
-    //-----> Classes used to navigate between activities, not the most clean way, but it works
-    public void toNetwork(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+    public void toAddSkillLearned(View view) {
+        GLOBALS.getGlobalInstance().setFinishSwap(true);
+        Intent intent = new Intent(this, addLearnedSkill.class);
         startActivity(intent);
     }
 
-    public void toProfile(View view) {
-        Intent intent = new Intent(this, profile.class);
+    public void toNetwork(View view){
+        Intent intent = new Intent (this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -40,18 +40,10 @@ public class communication extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void toUserOne(View view) {
-        Intent intent = new Intent(this, user1.class);
+    public void toProfile(View view) {
+        Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
 
-    public void toVideoMessage(View view) {
-        Intent intent = new Intent(this, videoMessageCommunication.class);
-        startActivity(intent);
-    }
 
-    public void toCalendarAvailability(View view) {
-        Intent intent = new Intent(this, calendarAvailability.class);
-        startActivity(intent);
-    }
 }

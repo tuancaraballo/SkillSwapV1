@@ -3,14 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/profileLayout"
     android:orientation="vertical"
-    tools:context="com.tuananhcaraballo.skillswapv1.MainActivity">
+    tools:context="com.tuananhcaraballo.skillswapv1.Justin">
 
-    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
-    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
-    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
 
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/themeColor">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="Justin's Profile"-->
+            <!--android:textColor="@color/white1"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textSize="30dp"-->
+            <!--android:id="@+id/title"/>-->
+        <!--</LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +35,7 @@
             android:gravity="center_horizontal"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            android:text="My Profile"
+            android:text="Justin's Profile"
             android:textColor="@color/white1"
             android:layout_gravity="center_horizontal"
             android:textSize="25dp"
@@ -60,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/female2"
+                    android:src="@drawable/male3"
                     android:adjustViewBounds="true"
                     android:maxWidth="200dp"
                     android:maxHeight="200dp"
@@ -71,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="17dp"
-                    android:text="Alice"
+                    android:text="Justin"
                     />
             </LinearLayout>
 
@@ -79,14 +91,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/background2"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:textSize="15dp"
                 android:padding="5dp"
-                android:text="Hello, my name is Alice. I look forward to swapping skills with you!"/>
+                android:text="I'm just a guy looking to learn new things. Would especially love to learn dancing in time for my sister's wedding."
+                />
 
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textSize="15dp"
-                android:text=" (4)"
+                android:text=" (24)"
                 android:textStyle="italic"
                 />
         </LinearLayout>
@@ -127,7 +139,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
-
 
 
             <!--One Column of tiles-->
@@ -156,20 +167,13 @@
                     android:layout_marginLeft="5dp"
                     android:text="Beginner"/>
 
-
-
-
-                <!-- android:layout_marginLeft="20dp"-->
                 <TextView
-                    android:id="@+id/teachBeginner"
+                    android:id="@+id/you_teach_a"
                     android:layout_width="135dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
                     android:layout_marginTop="4dp"
-                    android:text="Coding \n"/>
-
-
+                    android:text="\t\tFencing\n\t\tWriting"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,18 +183,12 @@
                     android:layout_marginTop="10dp"
                     android:text="Intermediate"/>
 
-
-
-                <!--android:layout_marginLeft="20dp"-->
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
                     android:layout_marginTop="4dp"
-                    android:layout_marginLeft="20dp"
-                    android:id="@+id/teachIntermediate"
-                    android:text="Origami\nSinging"/>
-
+                    android:text="\t\tSinging\n\t\t"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -200,20 +198,14 @@
                     android:layout_marginTop="10dp"
                     android:text="Advanced"/>
 
-
-
-                <!--android:layout_marginLeft="20dp"-->
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="4dp"
-                    android:id="@+id/teachAdvanced"
-                    android:text="\n"/>
+                    android:text="\t\tAlgebra"/>
 
             </LinearLayout>
-
 
             <!--One Column of tiles-->
             <LinearLayout
@@ -224,8 +216,6 @@
                 android:layout_weight="1"
                 android:background="@color/background3">
 
-
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -233,8 +223,6 @@
                     android:layout_marginTop="10dp"
                     android:textSize="20dp"
                     android:text="Wants to Learn"/>
-
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -244,20 +232,12 @@
                     android:layout_marginTop="10dp"
                     android:text="Beginner"/>
 
-
-
-                <!--android:layout_marginLeft="20dp"-->
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
-
-                    android:layout_marginLeft="20dp"
-                    android:id="@+id/learnBeginner"
                     android:layout_marginTop="4dp"
-                    android:text="Writing\n"/>
-
-
+                    android:text="\t\tDancing\n\t\tCoding"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -267,15 +247,12 @@
                     android:layout_marginTop="10dp"
                     android:text="Intermediate"/>
 
-                <!--android:layout_marginLeft="20dp"-->
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
-                    android:id="@+id/learnIntermediate"
                     android:layout_marginTop="4dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="Guitar \n"/>
+                    android:text="\t\tDrawing\n\t\tPhotography"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -285,27 +262,15 @@
                     android:layout_marginTop="10dp"
                     android:text="Advanced"/>
 
-                <!-- android:layout_marginLeft="20dp"-->
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
                     android:textSize="12dp"
                     android:layout_marginTop="4dp"
-                    android:id="@+id/learnAdvanced"
-                    android:layout_marginLeft="20dp"
-                    android:text="Dancing"/>
+                    android:text="\t\t\n"/>
 
             </LinearLayout>
         </LinearLayout>
-
-        <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="5dp"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:text="Search for more Skills"-->
-        <!--android:textColor="@color/green1"-->
-        <!--android:onClick="toSkillTabs"/>-->
 
         <Button
             android:layout_width="wrap_content"
@@ -313,17 +278,13 @@
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:padding="5dp"
-            android:text="   Search for more Skills   "
+            android:text="   Accept skillswap request   "
             android:background="@color/themeColor"
             android:textColor="@color/white1"
-            android:onClick="toSkillTabs"/>
-
-
-
+            android:onClick="toNetwork"/>
 
     </LinearLayout>
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"
-        android:visibility="gone"/>
+    <include layout="@layout/toolbar"/>
+
 </LinearLayout>
